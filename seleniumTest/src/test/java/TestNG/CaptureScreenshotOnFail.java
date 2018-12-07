@@ -84,9 +84,11 @@ public class CaptureScreenshotOnFail {
 			
 			Thread.sleep(10000);
 			
-			logger.fail("test failure -- message here", MediaEntityBuilder.createScreenCaptureFromPath("./Screenshots/"+result.getName()+ ".png").build());
-
+		//	logger.fail("test failure -- message here", MediaEntityBuilder.createScreenCaptureFromPath("./Screenshots/"+result.getName()+ ".png").build());
+                //C:\Users\Sharad.Chauhan\git\repository3\seleniumTest\Screenshots\takeScreenshotWhenFail.png
+			logger.fail("test failure -- message here", MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Sharad.Chauhan\\git\\repository3\\seleniumTest\\Screenshots\\"+result.getName() +".png").build());
 			
+			Thread.sleep(5000);
 
 			extent.flush();
 			driver.quit();
