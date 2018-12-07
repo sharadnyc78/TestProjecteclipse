@@ -1,157 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="9" passed="9">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="515" started-at="2018-12-07T07:57:33Z" finished-at="2018-12-07T07:57:34Z">
+  <suite name="Default suite" duration-ms="22715" started-at="2018-12-07T08:38:51Z" finished-at="2018-12-07T08:39:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="515" started-at="2018-12-07T07:57:33Z" finished-at="2018-12-07T07:57:34Z">
-      <class name="DatDrivenFrame.UseXlsDataDRiven">
-        <test-method status="PASS" signature="DP(java.lang.String, java.lang.String)[pri:0, instance:DatDrivenFrame.UseXlsDataDRiven@4667ae56]" name="DP" duration-ms="8" started-at="2018-12-07T13:27:34Z" data-provider="ddd" finished-at="2018-12-07T13:27:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Usernamerow0col0]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password r0col1]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="22715" started-at="2018-12-07T08:38:51Z" finished-at="2018-12-07T08:39:14Z">
+      <class name="TestCases.RsystemsScreenshot">
+        <test-method status="PASS" signature="takeScreenshot()[pri:0, instance:TestCases.RsystemsScreenshot@146ba0ac]" name="takeScreenshot" duration-ms="22700" started-at="2018-12-07T14:08:51Z" finished-at="2018-12-07T14:09:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DP -->
-        <test-method status="PASS" signature="DP(java.lang.String, java.lang.String)[pri:0, instance:DatDrivenFrame.UseXlsDataDRiven@4667ae56]" name="DP" duration-ms="1" started-at="2018-12-07T13:27:34Z" data-provider="ddd" finished-at="2018-12-07T13:27:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Usernamerow1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password col2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DP -->
-        <test-method status="PASS" signature="DP(java.lang.String, java.lang.String)[pri:0, instance:DatDrivenFrame.UseXlsDataDRiven@4667ae56]" name="DP" duration-ms="1" started-at="2018-12-07T13:27:34Z" data-provider="ddd" finished-at="2018-12-07T13:27:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Usernamerow2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password col3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DP -->
-        <test-method status="PASS" signature="DP(java.lang.String, java.lang.String)[pri:0, instance:DatDrivenFrame.UseXlsDataDRiven@4667ae56]" name="DP" duration-ms="1" started-at="2018-12-07T13:27:34Z" data-provider="ddd" finished-at="2018-12-07T13:27:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Usernamerow3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password col4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DP -->
-        <test-method status="PASS" signature="DP(java.lang.String, java.lang.String)[pri:0, instance:DatDrivenFrame.UseXlsDataDRiven@4667ae56]" name="DP" duration-ms="0" started-at="2018-12-07T13:27:34Z" data-provider="ddd" finished-at="2018-12-07T13:27:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Usernamerow4]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password col5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DP -->
-        <test-method status="PASS" signature="DP(java.lang.String, java.lang.String)[pri:0, instance:DatDrivenFrame.UseXlsDataDRiven@4667ae56]" name="DP" duration-ms="1" started-at="2018-12-07T13:27:34Z" data-provider="ddd" finished-at="2018-12-07T13:27:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Usernamerow5]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password col6]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DP -->
-        <test-method status="PASS" signature="DP(java.lang.String, java.lang.String)[pri:0, instance:DatDrivenFrame.UseXlsDataDRiven@4667ae56]" name="DP" duration-ms="1" started-at="2018-12-07T13:27:34Z" data-provider="ddd" finished-at="2018-12-07T13:27:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Usernamerow6]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password col7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DP -->
-        <test-method status="PASS" signature="DP(java.lang.String, java.lang.String)[pri:0, instance:DatDrivenFrame.UseXlsDataDRiven@4667ae56]" name="DP" duration-ms="1" started-at="2018-12-07T13:27:34Z" data-provider="ddd" finished-at="2018-12-07T13:27:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Usernamerow7]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password col8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DP -->
-        <test-method status="PASS" signature="DP(java.lang.String, java.lang.String)[pri:0, instance:DatDrivenFrame.UseXlsDataDRiven@4667ae56]" name="DP" duration-ms="1" started-at="2018-12-07T13:27:34Z" data-provider="ddd" finished-at="2018-12-07T13:27:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Usernamerow8]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password col9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DP -->
-      </class> <!-- DatDrivenFrame.UseXlsDataDRiven -->
+        </test-method> <!-- takeScreenshot -->
+      </class> <!-- TestCases.RsystemsScreenshot -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

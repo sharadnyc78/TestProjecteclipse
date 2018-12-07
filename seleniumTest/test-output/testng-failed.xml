@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="DatDrivenFrame.DataProviderTest">
+      <class name="DatDrivenFrame.UseXlsDataDRiven">
         <methods>
-          <include name="DP" invocation-numbers="0"/>
+          <include name="DP"/>
         </methods>
-      </class> <!-- DatDrivenFrame.DataProviderTest -->
+      </class> <!-- DatDrivenFrame.UseXlsDataDRiven -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
