@@ -61,11 +61,15 @@ public class CalculatorTest {
 		
 		wd.findElement(By.id("num7Button")).click();
 		
+		logger.log(Status.INFO, "Clicked on number 7");
+		
 		
 
 		wd.findElement(By.id("plusButton")).click();
 
 		wd.findElement(By.id("num8Button")).click();
+		
+		logger.log(Status.INFO, "Clicked on number 8");
 		
 		wd.findElement(By.id("equalButton")).click();
 		
@@ -83,7 +87,7 @@ public class CalculatorTest {
 		
 		// screenshots
 		
-	    logger.addScreenCaptureFromPath("C:\\Users\\Sharad.Chauhan\\Desktop\\selenium\\2.jpeg")	;
+	    //logger.addScreenCaptureFromPath("C:\\Users\\Sharad.Chauhan\\Desktop\\selenium\\2.jpeg")	;
 		
         logger.fail("details", MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Sharad.Chauhan\\Desktop\\selenium\\2.jpeg").build());
 

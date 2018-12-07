@@ -36,7 +36,9 @@ public class LearnReadxlsfiles {
 		String Pwd = sheet1.getRow(0).getCell(1).getStringCellValue(); // pwd is row 0 , cell 1
 		System.out.println(Pwd);
 		
-		int rowCount = sheet1.getLastRowNum();
+		int rowindex = sheet1.getLastRowNum(); // this gives one less as index stars from 0
+		
+		int rowCount = rowindex+1;
 		
 		int columns = sheet1.getRow(0).getLastCellNum();  // this is useful
 		
@@ -45,7 +47,7 @@ public class LearnReadxlsfiles {
 		
 		System.out.println("total rows : " + rowCount);  // 10 data will show as 0 to 9 , answer is 9
 		
-		for(int i=0;i<=rowCount;i++) {
+		for(int i=0;i<rowCount;i++) {
 			
 			
 			String dataUsername = sheet1.getRow(i).getCell(0).getStringCellValue();
