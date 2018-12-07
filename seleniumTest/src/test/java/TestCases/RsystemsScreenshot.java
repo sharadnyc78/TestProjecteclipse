@@ -11,6 +11,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.annotations.Test;
 
+import Library.Utility;
+
 public class RsystemsScreenshot {
 	
 	
@@ -37,15 +39,8 @@ public class RsystemsScreenshot {
 		
 		// so typecast this
 		
-		TakesScreenshot ts = (TakesScreenshot)driver;
 		
-		File src = ts.getScreenshotAs(OutputType.FILE);
-		
-       
-	    FileHandler.copy(src, new File("./Screenshots/rsys.png"));
-		
-		//FileUtils.copyFile(src,new File("./Screenshots/rsys.png"));
-		 
+		Utility.capturescreenshot(driver);  // used Utility class here from Library package
 		
 		driver.quit();
 		
