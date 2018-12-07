@@ -12,22 +12,23 @@ import org.openqa.selenium.io.FileHandler;
 public class Utility {
 	
 	// keep it static as we will call it directly
-	public static void capturescreenshot(WebDriver driver) {
+	
+	
+
+
+	public static void capturescreenshot(WebDriver driver, String screenshotname) throws IOException {
+		// TODO Auto-generated method stub
 		
-    try {
-		TakesScreenshot ts = (TakesScreenshot)driver;
-			
-			File src = ts.getScreenshotAs(OutputType.FILE);
-			
-		   
-		    FileHandler.copy(src, new File("./Screenshots/rsys.png"));
-		    
-		    
-	 } catch (Exception e) {
+		TakesScreenshot ts1 = (TakesScreenshot)driver;
 		
-		System.out.println("exception while takin screenshot");
+		File src = ts1.getScreenshotAs(OutputType.FILE);
+		
+	   
+	    FileHandler.copy(src, new File("./Screenshots/"+screenshotname+ ".png"));
+	
+		
 	}
-    
-	}
+	
+	//public void 
 }
 
