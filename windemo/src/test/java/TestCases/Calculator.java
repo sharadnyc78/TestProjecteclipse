@@ -8,6 +8,8 @@ import org.openqa.selenium.winium.DesktopOptions;
 import org.openqa.selenium.winium.WiniumDriver;
 
 public class Calculator {
+	
+	// RUN WIN SERVER - FIRST
 
 	public static void main(String[] args) throws MalformedURLException, InterruptedException {
 		// TODO Auto-generated method stub

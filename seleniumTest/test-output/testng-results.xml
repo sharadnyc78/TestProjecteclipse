@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33989" started-at="2018-12-07T11:58:05Z" finished-at="2018-12-07T11:58:39Z">
+  <suite name="Default suite" duration-ms="32897" started-at="2018-12-07T13:11:40Z" finished-at="2018-12-07T13:12:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33989" started-at="2018-12-07T11:58:05Z" finished-at="2018-12-07T11:58:39Z">
-      <class name="TestNG.CaptureScreenshotOnFail">
-        <test-method status="FAIL" signature="takeScreenshotWhenFail()[pri:0, instance:TestNG.CaptureScreenshotOnFail@31ef45e3]" name="takeScreenshotWhenFail" duration-ms="17210" started-at="2018-12-07T17:28:05Z" finished-at="2018-12-07T17:28:22Z">
+    <test name="Default test" duration-ms="32897" started-at="2018-12-07T13:11:40Z" finished-at="2018-12-07T13:12:13Z">
+      <class name="TestNG.CaptureScreenshotOnFailandPass">
+        <test-method status="FAIL" signature="takeScreenshotWhenFailandPass()[pri:0, instance:TestNG.CaptureScreenshotOnFailandPass@31ef45e3]" name="takeScreenshotWhenFailandPass" duration-ms="16112" started-at="2018-12-07T18:41:40Z" finished-at="2018-12-07T18:41:56Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='ttttttttttttttttxtSearch']"}
@@ -18,8 +18,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'C40FF82NCU', ip: '10.131.74.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\SHARAD~1.CHA\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57819}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-Session ID: ca5169c8447c50b5464031e3ee625dda
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\SHARAD~1.CHA\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63968}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 1b14a5f32c9e9e0968463db4a3cab9ec
 *** Element info: {Using=xpath, value=.//*[@id='ttttttttttttttttxtSearch']}]]>
             </message>
             <full-stacktrace>
@@ -31,8 +31,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'C40FF82NCU', ip: '10.131.74.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\SHARAD~1.CHA\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57819}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-Session ID: ca5169c8447c50b5464031e3ee625dda
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\SHARAD~1.CHA\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63968}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 1b14a5f32c9e9e0968463db4a3cab9ec
 *** Element info: {Using=xpath, value=.//*[@id='ttttttttttttttttxtSearch']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -50,7 +50,7 @@ Session ID: ca5169c8447c50b5464031e3ee625dda
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at TestNG.CaptureScreenshotOnFail.takeScreenshotWhenFail(CaptureScreenshotOnFail.java:66)
+	at TestNG.CaptureScreenshotOnFailandPass.takeScreenshotWhenFailandPass(CaptureScreenshotOnFailandPass.java:73)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -80,19 +80,19 @@ Session ID: ca5169c8447c50b5464031e3ee625dda
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- takeScreenshotWhenFail -->
-        <test-method status="PASS" signature="tearDown1(org.testng.ITestResult)[pri:0, instance:TestNG.CaptureScreenshotOnFail@31ef45e3]" name="tearDown1" is-config="true" duration-ms="16762" started-at="2018-12-07T17:28:22Z" finished-at="2018-12-07T17:28:39Z">
+        </test-method> <!-- takeScreenshotWhenFailandPass -->
+        <test-method status="PASS" signature="tearDown1(org.testng.ITestResult)[pri:0, instance:TestNG.CaptureScreenshotOnFailandPass@31ef45e3]" name="tearDown1" is-config="true" duration-ms="16770" started-at="2018-12-07T18:41:56Z" finished-at="2018-12-07T18:42:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=takeScreenshotWhenFail status=FAILURE method=CaptureScreenshotOnFail.takeScreenshotWhenFail()[pri:0, instance:TestNG.CaptureScreenshotOnFail@31ef45e3] output={null}]]]>
+                <![CDATA[[TestResult name=takeScreenshotWhenFailandPass status=FAILURE method=CaptureScreenshotOnFailandPass.takeScreenshotWhenFailandPass()[pri:0, instance:TestNG.CaptureScreenshotOnFailandPass@31ef45e3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown1 -->
-      </class> <!-- TestNG.CaptureScreenshotOnFail -->
+      </class> <!-- TestNG.CaptureScreenshotOnFailandPass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

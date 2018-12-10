@@ -17,7 +17,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import Library.Utility;
 
-public class CaptureScreenshotOnFail {
+public class CaptureScreenshotOnFailandPass {
 	
 	WebDriver driver;
 	
@@ -31,7 +31,7 @@ public class CaptureScreenshotOnFail {
 	
     @Test
 	
-	public void takeScreenshotWhenFail() throws IOException, InterruptedException  {
+	public void takeScreenshotWhenFailandPass() throws IOException, InterruptedException  {
     	
       reporter = new ExtentHtmlReporter("./Reports/Capture on Fail.html"); // give the path for report geneartion
 		
@@ -58,6 +58,13 @@ public class CaptureScreenshotOnFail {
 		driver.manage().window().maximize();
 		
 		driver.get("https://www.rsystems.com/");
+		
+		logger.log(Status.PASS, "Opening Browser");
+		
+		Utility.capturescreenshot(driver, "Open Browser");
+		
+		logger.pass("test pass -- message here", MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Sharad.Chauhan\\git\\repository3\\seleniumTest\\Screenshots\\"+"Open Browser" +".png").build());
+
 		
 	
 			Thread.sleep(3000);

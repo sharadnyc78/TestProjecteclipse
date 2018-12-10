@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="TestNG.CaptureScreenshotOnFail">
+      <class name="TestNG.CaptureScreenshotOnFailandPass">
         <methods>
           <include name="tearDown1"/>
-          <include name="takeScreenshotWhenFail"/>
+          <include name="takeScreenshotWhenFailandPass"/>
         </methods>
-      </class> <!-- TestNG.CaptureScreenshotOnFail -->
+      </class> <!-- TestNG.CaptureScreenshotOnFailandPass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
