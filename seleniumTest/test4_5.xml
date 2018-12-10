@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="SeleniumTC.Rsystems_screen_extent_datadriven4"/>
+      <class name="SeleniumTC.TestB_Rsystems5"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

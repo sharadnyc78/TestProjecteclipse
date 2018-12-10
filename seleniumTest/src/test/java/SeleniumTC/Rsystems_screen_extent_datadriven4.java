@@ -20,7 +20,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import Library.TestBase;
 
 
-public class RsystemsshotsonPassnFail_Extent4 extends TestBase {
+public class Rsystems_screen_extent_datadriven4 extends TestBase {
 	
 	
 	
@@ -82,7 +82,9 @@ public class RsystemsshotsonPassnFail_Extent4 extends TestBase {
 		
 		     capturescreenshot("Investors"); // CAPTURE SCREENSHOT ON PASS
 		     logger.pass("test pass -- Click investors", MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Sharad.Chauhan\\git\\repository3\\seleniumTest\\Screenshots\\"+"Investors" +".png").build());
-				
+//test 4				
+		sendkeys("//input[@id='txtSearch']", "careers");
+		
 		
 
 		

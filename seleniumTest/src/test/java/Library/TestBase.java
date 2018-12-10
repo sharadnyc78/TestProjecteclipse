@@ -47,6 +47,9 @@ public void Click(String xpathkey) {
 		driver.findElement(By.xpath(xpathkey)).click();
 	}
 
+
+
+
 public void Navigate(String appurl) {
 	
 	driver.get(appurl);
@@ -54,9 +57,9 @@ public void Navigate(String appurl) {
 	
 }
 
-public void sendkeys(String xpathkey2, String send) {
+public void sendkeys(String xpathkey2, String send2) {
 	
-	driver.findElement(By.xpath(xpathkey2)).sendKeys(send);
+	driver.findElement(By.xpath(xpathkey2)).sendKeys(send2);
 }
 
 public void quit() {

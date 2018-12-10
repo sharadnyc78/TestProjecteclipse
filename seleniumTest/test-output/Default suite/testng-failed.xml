@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="SeleniumTC.RsystemsshotsonPassnFail_Extent4">
+      <class name="SeleniumTC.TestB_Rsystems5">
         <methods>
-          <include name="Test2"/>
+          <include name="testdata"/>
         </methods>
-      </class> <!-- SeleniumTC.RsystemsshotsonPassnFail_Extent4 -->
+      </class> <!-- SeleniumTC.TestB_Rsystems5 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
