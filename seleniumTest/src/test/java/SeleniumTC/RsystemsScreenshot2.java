@@ -1,4 +1,4 @@
-package TestNG;
+package SeleniumTC;
 
 import java.io.File;
 import java.io.IOException;
@@ -12,18 +12,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.annotations.Test;
 
+import Library.TestBase;
 import Library.Utility;
 
-public class RsystemsScreenshot {
+public class RsystemsScreenshot2 extends TestBase {
 	
 	
 	@Test
 	
-	public void takeScreenshot() throws IOException  {
+	public void takeScreenshotRsystem1() throws IOException  {
 		
 	
 		
-         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Sharad.Chauhan\\Desktop\\selenium\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Sharad.Chauhan\\Desktop\\selenium\\chromedriver_win32\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();
 		
@@ -38,14 +39,12 @@ public class RsystemsScreenshot {
 		
 		//driver.findElement(By.xpath(".//*[@id='txtSearch']")).sendKeys("hello");
 		
-		// Takes Screenshot is an interface -- cannot create object
-		
-		// so typecast this
 		
 		
-		Utility.capturescreenshot(driver, "rsystems home page ");  // used Utility class here from Library package
 		
-		driver.quit();
+		//TestBase.ca( "rsystems home page ");  // used Utility class here from Library package
+		
+		
 		
 		
 		

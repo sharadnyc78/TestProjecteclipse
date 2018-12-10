@@ -9,7 +9,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class UseXlsDataDRiven {
+public class UseXlsDataDRiven3 {
 
 	//public static void main(String[] args) {
 		// TODO Auto-generated method stub

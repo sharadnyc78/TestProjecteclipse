@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import junit.framework.Assert;
 
-public class DataProviderTest {
+public class DataProviderTest1 {
 	
 	
 	@Test(dataProvider="ddd")

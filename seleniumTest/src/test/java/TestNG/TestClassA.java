@@ -24,7 +24,7 @@ public class TestClassA {
 		
 		
 		
-		reporter = new ExtentHtmlReporter("./Reports/shar.html"); // give the path for report geneartion
+		reporter = new ExtentHtmlReporter("./Reports/TestClassA.html"); // give the path for report geneartion
 		
 		extent = new ExtentReports();
 		
@@ -71,9 +71,9 @@ public class TestClassA {
 		
 		ExtentTest logger2 =extent.createTest("TestA2");
 
-		logger.log(Status.INFO, "Test strted");
+		logger2.log(Status.INFO, "Test strted");
 		
-		logger.log(Status.PASS, "Passed");
+		logger2.log(Status.PASS, "Passed");
 		
 		extent.flush();
 		

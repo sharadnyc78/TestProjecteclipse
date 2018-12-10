@@ -1,4 +1,4 @@
-package TestNG;
+package SeleniumTC;
 
 import java.io.IOException;
 
@@ -10,7 +10,7 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
-public class ExtentReportDemo {
+public class ExtentReportDemo3 {
 	
 
 	ExtentHtmlReporter reporter;
