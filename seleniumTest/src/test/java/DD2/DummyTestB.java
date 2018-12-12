@@ -96,6 +96,7 @@ ExtentTest logger ;
 	logger.log(Status.INFO, "in test BTestB2");
 	
 	extent.flush();  // flush report 2
+	//
 	
 	}
 	
