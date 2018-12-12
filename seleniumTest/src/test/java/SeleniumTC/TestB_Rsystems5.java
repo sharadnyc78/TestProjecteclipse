@@ -72,13 +72,22 @@ public class TestB_Rsystems5 extends TestBase {
 		     
 	@Test(dataProvider="ddd")
 		     
-		     public void testdata(String xpath_search, String Search_text) {
+		     public void testdata(String xpath_search, String Search_text) throws IOException {
 		
 		xpath_search= "//input[@id='txtSearch']";
 		    	
 		      //System.out.println(sendtext);
 		     
 		     sendkeys(xpath_search, Search_text);
+		     
+		     logger.log(Status.PASS, "data");
+				
+		     capturescreenshot("data"); // CAPTURE SCREENSHOT ON PASS
+		
+		     logger.pass("test pass -- data", MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Sharad.Chauhan\\git\\repository3\\seleniumTest\\Screenshots\\"+"data" +".png").build());
+
+		     
+		     extent.flush();
 		     
 		     }
     	
@@ -150,6 +159,8 @@ public class TestB_Rsystems5 extends TestBase {
     	
     	
     		}
+		
+	
 		
 }
     

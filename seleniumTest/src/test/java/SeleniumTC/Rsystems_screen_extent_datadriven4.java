@@ -93,12 +93,12 @@ public class Rsystems_screen_extent_datadriven4 extends TestBase {
         Assert.assertFalse(true);
         
           	// flush report 1
-    	} catch ( Error e ) {
+    	            } catch ( Error e ) {
     		
     		logger.log(Status.FAIL,"Failure observed");
     		
     	
-    	}
+    	                 }
     	
     	extent.flush();
     }

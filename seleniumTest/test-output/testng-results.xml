@@ -1,113 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13806" started-at="2018-12-10T13:26:57Z" finished-at="2018-12-10T13:27:11Z">
+  <suite name="Default suite" duration-ms="20199" started-at="2018-12-12T06:17:20Z" finished-at="2018-12-12T06:17:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13806" started-at="2018-12-10T13:26:57Z" finished-at="2018-12-10T13:27:11Z">
-      <class name="SeleniumTC.TestB_Rsystems5">
-        <test-method status="PASS" signature="takeScreenshotWhenFailandPass()[pri:0, instance:SeleniumTC.TestB_Rsystems5@464bee09]" name="takeScreenshotWhenFailandPass" duration-ms="13080" started-at="2018-12-10T18:56:57Z" finished-at="2018-12-10T18:57:10Z">
+    <test name="Default test" duration-ms="20199" started-at="2018-12-12T06:17:20Z" finished-at="2018-12-12T06:17:41Z">
+      <class name="DD2.DummyTestB">
+        <test-method status="PASS" signature="extentrep()[pri:0, instance:DD2.DummyTestB@59ec2012]" name="extentrep" is-config="true" duration-ms="167" started-at="2018-12-12T11:47:20Z" finished-at="2018-12-12T11:47:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- takeScreenshotWhenFailandPass -->
-        <test-method status="PASS" signature="testdata(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTC.TestB_Rsystems5@464bee09]" name="testdata" duration-ms="82" started-at="2018-12-10T18:57:10Z" data-provider="ddd" finished-at="2018-12-10T18:57:10Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ "//input[@id='txtSearch']"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Careers]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- extentrep -->
+        <test-method status="PASS" signature="DTestB1()[pri:1, instance:DD2.DummyTestB@59ec2012]" name="DTestB1" duration-ms="20127" started-at="2018-12-12T11:47:20Z" finished-at="2018-12-12T11:47:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testdata -->
-        <test-method status="PASS" signature="testdata(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTC.TestB_Rsystems5@464bee09]" name="testdata" duration-ms="38" started-at="2018-12-10T18:57:10Z" data-provider="ddd" finished-at="2018-12-10T18:57:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ "//input[@id='txtSearch']"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[bbb]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- DTestB1 -->
+        <test-method status="PASS" signature="DTestB2()[pri:2, instance:DD2.DummyTestB@59ec2012]" name="DTestB2" duration-ms="62" started-at="2018-12-12T11:47:40Z" finished-at="2018-12-12T11:47:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testdata -->
-        <test-method status="PASS" signature="testdata(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTC.TestB_Rsystems5@464bee09]" name="testdata" duration-ms="38" started-at="2018-12-10T18:57:11Z" data-provider="ddd" finished-at="2018-12-10T18:57:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ "//input[@id='txtSearch']"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ccc]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testdata -->
-        <test-method status="PASS" signature="testdata(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTC.TestB_Rsystems5@464bee09]" name="testdata" duration-ms="40" started-at="2018-12-10T18:57:11Z" data-provider="ddd" finished-at="2018-12-10T18:57:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ "//input[@id='txtSearch']"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ddd]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testdata -->
-        <test-method status="PASS" signature="testdata(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTC.TestB_Rsystems5@464bee09]" name="testdata" duration-ms="41" started-at="2018-12-10T18:57:11Z" data-provider="ddd" finished-at="2018-12-10T18:57:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ "//input[@id='txtSearch']"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[eee]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testdata -->
-        <test-method status="PASS" signature="testdata(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTC.TestB_Rsystems5@464bee09]" name="testdata" duration-ms="40" started-at="2018-12-10T18:57:11Z" data-provider="ddd" finished-at="2018-12-10T18:57:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ "//input[@id='txtSearch']"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[fff]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testdata -->
-      </class> <!-- SeleniumTC.TestB_Rsystems5 -->
+        </test-method> <!-- DTestB2 -->
+      </class> <!-- DD2.DummyTestB -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

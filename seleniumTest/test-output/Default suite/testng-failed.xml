@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="SeleniumTC.TestB_Rsystems5">
+      <class name="DD2.DummyTestB">
         <methods>
-          <include name="testdata"/>
+          <include name="DTestB2"/>
+          <include name="DTestB1"/>
+          <include name="extentrep"/>
         </methods>
-      </class> <!-- SeleniumTC.TestB_Rsystems5 -->
+      </class> <!-- DD2.DummyTestB -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
