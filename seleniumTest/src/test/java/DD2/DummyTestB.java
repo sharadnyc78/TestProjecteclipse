@@ -2,6 +2,9 @@ package DD2;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -20,31 +23,6 @@ import junit.framework.Assert;
 public class DummyTestB extends DummyTestBase1 {
 	
 	
-ExtentHtmlReporter reporter;
-ExtentReports extent;
-ExtentTest logger ;
-	
-
-	@BeforeSuite
-	
-	public void extentrep() {
-		
-
-		reporter = new ExtentHtmlReporter("C:\\Users\\Sharad.Chauhan\\git\\repository3\\seleniumTest\\Reports\\DummyTest.html"); // give the path for report geneartion
-		
-		extent = new ExtentReports();
-		
-		extent.attachReporter(reporter);
-		//logger.log(Status.INFO, "@beforesuite set up");
-		
-	}
-	
-		
-	
-	
-	
-	
-	
 	
 	
 @Test(priority=1)
@@ -52,7 +30,7 @@ ExtentTest logger ;
 	public void DTestB1() throws IOException {
 	
 	
-	
+
 	
 	
 	logger =extent.createTest("DtestB1");
@@ -77,7 +55,25 @@ ExtentTest logger ;
 	     logger.pass("test pass -- Navigation", MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Sharad.Chauhan\\git\\repository3\\seleniumTest\\Screenshots\\"+"Navigation" +".png").build());
 //test 
 		
-		click("investor_xpath");
+		
+		
+			
+			try {
+				click("investor_xpath");
+				
+				waits.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("investor_xpath"))); // waits implemented
+				
+				logger.log(Status.INFO, "Investor clicked  ");
+				
+				takeScreenshot("investorlink"); // CAPTURE SCREENSHOT ON PASS
+				
+			     logger.pass("test pass -- Navigation", MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Sharad.Chauhan\\git\\repository3\\seleniumTest\\Screenshots\\"+"investorlink" +".png").build());
+		//test 
+			}catch(Exception e) {
+				
+				logger.log(Status.FAIL, "Failure of Investor xpath" + e);
+			}
+	
 	
 		type("search_xpath", "Careers");
 		

@@ -19,8 +19,9 @@ public class DummyTestC extends DummyTestBase1 {
 		
 		System.out.println("inside DTestC1");
 		
-		//logger =extent.createTest("DtestC1");
-		//logger.log(Status.INFO, "open browser " + "DtestC1");
+		logger =extent.createTest("DtestC1");
+		logger.log(Status.INFO, "open browser " + "DtestC1");
+		extent.flush();
 		
 		
 

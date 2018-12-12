@@ -5,7 +5,6 @@
     <classes>
       <class name="DD2.DummyTestB">
         <methods>
-          <include name="DTestB2"/>
           <include name="DTestB1"/>
           <include name="extentrep"/>
         </methods>

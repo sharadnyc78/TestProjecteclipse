@@ -14,6 +14,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.BeforeSuite;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 
 public class DummyTestBase1 {
@@ -23,10 +29,30 @@ public class DummyTestBase1 {
 	
 	String screenshotname;
 	
-	//public ExtentReports extent;
+	public WebDriverWait waits;
+	
+	
+	
+	public static ExtentReports extent;
+    public static ExtentTest logger;
+	public static ExtentHtmlReporter reporter;
+	
+	
+	
+@BeforeSuite
 
-	//public ExtentTest logger;
-	//public ExtentHtmlReporter reporter;
+   public void Setup() {
+	   
+		reporter = new ExtentHtmlReporter("C:\\Users\\Sharad.Chauhan\\git\\repository3\\seleniumTest\\Reports\\DummyTest-Testbasefucntion.html"); // give the path for report geneartion
+		
+		extent = new ExtentReports();
+		
+		extent.attachReporter(reporter);
+		
+
+		
+	
+		}
 	
 	
 	public void openBrowser(String bType) throws IOException {
@@ -52,7 +78,12 @@ public class DummyTestBase1 {
 				driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); // -- checks presence
+		
+		waits = new WebDriverWait(driver, 20); // waits implmented -- checks visibility 
+		
+		
+		
 		
 	}
 	
@@ -109,21 +140,9 @@ public class DummyTestBase1 {
 		
 		
 	}
-	
-	/*
-   public void ExtentStart() {
-		reporter = new ExtentHtmlReporter("C:\\Users\\Sharad.Chauhan\\git\\repository3\\seleniumTest\\Reports\\DummyTest-Testbasefucntion.html"); // give the path for report geneartion
-		
-		extent = new ExtentReports();
-		
-		extent.attachReporter(reporter);
-		
-		logger =extent.createTest("helloo");
+
 		
 	
-		}
-		
-	*/	
 		
 		
 	
