@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="3" passed="2">
+<testng-results skipped="0" failed="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="24489" started-at="2018-12-14T06:43:47Z" finished-at="2018-12-14T06:44:12Z">
+  <suite name="Suite" duration-ms="41835" started-at="2018-12-14T07:48:06Z" finished-at="2018-12-14T07:48:48Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="24489" started-at="2018-12-14T06:43:47Z" finished-at="2018-12-14T06:44:12Z">
+    <test name="Test" duration-ms="41835" started-at="2018-12-14T07:48:06Z" finished-at="2018-12-14T07:48:48Z">
       <class name="DD2.DummyTestC">
-        <test-method status="FAIL" signature="DTestC1()[pri:3, instance:DD2.DummyTestC@6e1567f1]" name="DTestC1" duration-ms="0" started-at="2018-12-14T12:14:12Z" finished-at="2018-12-14T12:14:12Z">
+        <test-method status="FAIL" signature="DTestC1()[pri:3, instance:DD2.DummyTestC@cb644e]" name="DTestC1" duration-ms="1" started-at="2018-12-14T13:18:48Z" finished-at="2018-12-14T13:18:48Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -45,15 +45,33 @@
         </test-method> <!-- DTestC1 -->
       </class> <!-- DD2.DummyTestC -->
       <class name="DD2.DummyTestB">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:DD2.DummyTestB@59494225]" name="Setup" is-config="true" duration-ms="157" started-at="2018-12-14T12:13:47Z" finished-at="2018-12-14T12:13:47Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:DD2.DummyTestB@5cb9f472]" name="Setup" is-config="true" duration-ms="158" started-at="2018-12-14T13:18:06Z" finished-at="2018-12-14T13:18:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="DTestB1()[pri:1, instance:DD2.DummyTestB@59494225]" name="DTestB1" duration-ms="22729" started-at="2018-12-14T12:13:47Z" finished-at="2018-12-14T12:14:10Z">
+        <test-method status="PASS" signature="DTestB1(java.lang.String)[pri:1, instance:DD2.DummyTestB@5cb9f472]" name="DTestB1" duration-ms="19755" started-at="2018-12-14T13:18:06Z" data-provider="ddd" finished-at="2018-12-14T13:18:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Careers]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DTestB1 -->
-        <test-method status="PASS" signature="DTestB2()[pri:2, instance:DD2.DummyTestB@59494225]" name="DTestB2" duration-ms="1745" started-at="2018-12-14T12:14:10Z" finished-at="2018-12-14T12:14:12Z">
+        <test-method status="PASS" signature="DTestB1(java.lang.String)[pri:1, instance:DD2.DummyTestB@5cb9f472]" name="DTestB1" duration-ms="20272" started-at="2018-12-14T13:18:26Z" data-provider="ddd" finished-at="2018-12-14T13:18:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DTestB1 -->
+        <test-method status="PASS" signature="DTestB2()[pri:2, instance:DD2.DummyTestB@5cb9f472]" name="DTestB2" duration-ms="1790" started-at="2018-12-14T13:18:46Z" finished-at="2018-12-14T13:18:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DTestB2 -->

@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.Wait;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -25,9 +26,9 @@ public class DummyTestB extends DummyTestBase1 {
 	
 	
 	
-@Test(priority=1)
+@Test(priority=1,dataProvider="ddd")
 	
-	public void DTestB1() throws IOException {
+	public void DTestB1(String search_data) throws IOException {
 	
 	System.out.println("inside DTestB1");
 	
@@ -62,10 +63,7 @@ public class DummyTestB extends DummyTestBase1 {
 //test 
 		
 		
-		
-			
-			
-				click("investor_xpath");
+		click("investor_xpath");
 				
 				//waits.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("investor_xpath"))); // waits implemented
 				
@@ -77,7 +75,9 @@ public class DummyTestB extends DummyTestBase1 {
 	 
 			
 //test	
-		type("search_xpath", "Careers");
+		type("search_xpath", search_data); // Using dataprovider here
+		
+		System.out.println(search_data);
 		
 		
 		extent.flush();  // flush report 1
@@ -122,11 +122,34 @@ public class DummyTestB extends DummyTestBase1 {
             extent.flush();
 		
 		
-	}
-	
-	
-	}
+	    }
 }
+
+
+	
+@DataProvider(name="ddd")
+	
+	public Object[][] passdata() throws IOException{
+		
+			
+		Object[][] ar =new Object[2][1];  // rows = 0,1 , column 0
+		
+		ar[0][0] ="Careers";
+		//ar[0][1] ="B";
+		ar[1][0] ="C";
+		//ar[1][1] ="D";
+		
+		
+		
+		
+		return ar;
+		
+		
+	}
+	
+	
+	}
+
 	//
 	
 	
