@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
+      <class name="DD2.DummyTestB">
+        <methods>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- DD2.DummyTestB -->
       <class name="DD2.DummyTestC">
         <methods>
           <include name="DTestC1"/>
         </methods>
       </class> <!-- DD2.DummyTestC -->
-      <class name="DD2.DummyTestB">
-        <methods>
-          <include name="extentrep"/>
-        </methods>
-      </class> <!-- DD2.DummyTestB -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

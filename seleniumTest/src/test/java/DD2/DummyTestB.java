@@ -29,6 +29,10 @@ public class DummyTestB extends DummyTestBase1 {
 	
 	public void DTestB1() throws IOException {
 	
+	System.out.println("inside DTestB1");
+	
+	try {
+	
 	
 
 	
@@ -36,14 +40,16 @@ public class DummyTestB extends DummyTestBase1 {
 	logger =extent.createTest("DtestB1");
 	
 
-//
+//test
 		openBrowser("Chrome");
 		
 		logger.log(Status.INFO, "open browser " + "chrome");
 		
+		Thread.sleep(5000);
+		
 		takeScreenshot("Open Browser"); // CAPTURE SCREENSHOT ON PASS
 		
-	     logger.pass("test pass -- Open Browser pass", MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Sharad.Chauhan\\git\\repository3\\seleniumTest\\Screenshots\\"+"Open Browser" +".png").build());
+	     logger.info("test -- Open Browser ", MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Sharad.Chauhan\\git\\repository3\\seleniumTest\\Screenshots\\"+"Open Browser" +".png").build());
 //test 
 		
 		navigate("appurl");
@@ -52,48 +58,78 @@ public class DummyTestB extends DummyTestBase1 {
 		
 		takeScreenshot("Navigation"); // CAPTURE SCREENSHOT ON PASS
 		
-	     logger.pass("test pass -- Navigation", MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Sharad.Chauhan\\git\\repository3\\seleniumTest\\Screenshots\\"+"Navigation" +".png").build());
+	     logger.info("test -- Navigation to appurl", MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Sharad.Chauhan\\git\\repository3\\seleniumTest\\Screenshots\\"+"Navigation" +".png").build());
 //test 
 		
 		
 		
 			
-			try {
+			
 				click("investor_xpath");
 				
-				waits.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("investor_xpath"))); // waits implemented
+				//waits.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("investor_xpath"))); // waits implemented
 				
 				logger.log(Status.INFO, "Investor clicked  ");
 				
 				takeScreenshot("investorlink"); // CAPTURE SCREENSHOT ON PASS
 				
-			     logger.pass("test pass -- Navigation", MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Sharad.Chauhan\\git\\repository3\\seleniumTest\\Screenshots\\"+"investorlink" +".png").build());
-		//test 
-			}catch(Exception e) {
-				
-				logger.log(Status.FAIL, "Failure of Investor xpath" + e);
-			}
-	
-	
+			     logger.info("test  -- Investor link click", MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Sharad.Chauhan\\git\\repository3\\seleniumTest\\Screenshots\\"+"investorlink" +".png").build());
+	 
+			
+//test	
 		type("search_xpath", "Careers");
 		
 		
 		extent.flush();  // flush report 1
+		
+	}catch(Exception e) {
+		
+		logger.log(Status.FAIL, "Error is observed "+ e);
+		
+		
+	}
+		
+		
 		
 }
 		
 		
 @Test(priority=2)
 		
-		public void DTestB2() {
+	public void DTestB2() throws IOException {
+	
+	System.out.println("inside DTestB12");
+	
+	try {
 	
 	ExtentTest logger = extent.createTest("DTestB2"); // create test2 
 	
 	logger.log(Status.INFO, "in test BTestB2");
+//test	
+	click("SearchButton_xpath");
+	
+	logger.log(Status.INFO, "SearchButton");
+	
+	takeScreenshot("SearchButton"); // CAPTURE SCREENSHOT ON PASS
+	
+     logger.info("test -- Search button to be clicked", MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Sharad.Chauhan\\git\\repository3\\seleniumTest\\Screenshots\\"+"SearchButton" +".png").build());
 	
 	extent.flush();  // flush report 2
-	//
 	
+	} catch (Exception e) {
+            logger.log(Status.FAIL, "Error is observed "+ e);
+            
+            extent.flush();
+		
+		
 	}
 	
+	
+	}
 }
+	//
+	
+	
+
+	
+
