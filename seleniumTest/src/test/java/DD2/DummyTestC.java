@@ -16,24 +16,30 @@ import junit.framework.Assert;
 public class DummyTestC extends DummyTestBase1 {
 	
 	
-@Test(priority=3)
+@Test
 	
-	public void DTestC1() throws IOException {
+	public void DTestC1() throws IOException, InterruptedException {
 	
 	try {
+		
+		
 		
 		System.out.println("inside DTestC1");
 		
 		logger =extent.createTest("DtestC1");
 		
+	
+		openBrowser("Chrome");
+		navigate("appurl");
+	     click("ContactusButton_xpath");
 		
-		click("ContactusButton_xpath");
+		//Thread.sleep(5000);
 		
 		logger.log(Status.INFO, "Contact us to be Clicked  ");
 		
-		takeScreenshot("Contactusbutton2"); // CAPTURE SCREENSHOT ON PASS
+		takeScreenshot("Contactusbutton"); // CAPTURE SCREENSHOT ON PASS
 		
-	     logger.info("test -- Contactusbutton2", MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Sharad.Chauhan\\git\\repository3\\seleniumTest\\Screenshots\\"+"Contactusbutton2" +".png").build());
+	     logger.info("test -- Contactusbutton", MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Sharad.Chauhan\\git\\repository3\\seleniumTest\\Screenshots\\"+"Contactusbutton" +".png").build());
 		
 		extent.flush();  // flush
 		
@@ -41,14 +47,16 @@ public class DummyTestC extends DummyTestBase1 {
 		
 
 		logger.log(Status.FAIL, "Error is observed "+ e);
-		takeScreenshot("Contactusbutton2");
-		logger.info("test -- Contactusbutton2", MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Sharad.Chauhan\\git\\repository3\\seleniumTest\\Screenshots\\"+"Contactusbutton2" +".png").build());
+		takeScreenshot("Contactusbutton");
+		logger.info("test -- Contactusbutton", MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Sharad.Chauhan\\git\\repository3\\seleniumTest\\Screenshots\\"+"Contactusbutton" +".png").build());
 		extent.flush();
 		
 	}
 		
 
 	}
+
+// lesson : c wont work on pages opened by test b... we need to keep dependent tests in one test and independent in others
 	
 
 }

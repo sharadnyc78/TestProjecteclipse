@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -28,7 +29,7 @@ public class DummyTestB extends DummyTestBase1 {
 	
 @Test(priority=1,dataProvider="ddd")
 	
-	public void DTestB1(String search_data) throws IOException {
+	public void DTestB1(String search_data) throws IOException {  //String search_data
 	
 	System.out.println("inside DTestB1");
 	
@@ -76,6 +77,13 @@ public class DummyTestB extends DummyTestBase1 {
 			
 //test	
 		type("search_xpath", search_data); // Using dataprovider here
+			     
+			    // type("search_xpath","Carrers"); 
+		
+		takeScreenshot("searchdata");
+			
+		 logger.info("test  -- search data", MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Sharad.Chauhan\\git\\repository3\\seleniumTest\\Screenshots\\"+"searchdata" +".png").build());
+		 
 		
 		System.out.println(search_data);
 		
@@ -94,11 +102,11 @@ public class DummyTestB extends DummyTestBase1 {
 }
 		
 		
-@Test(priority=2)
+@AfterMethod  // lesson : i wanted one test to be datdriven and another one to run always after it. make test 2 as aftermethod and it will run always .
 		
 	public void DTestB2() throws IOException {
 	
-	System.out.println("inside DTestB12");
+	System.out.println("inside DTestB2");
 	
 	try {
 	
@@ -146,11 +154,11 @@ public class DummyTestB extends DummyTestBase1 {
 		
 		
 	}
-	
+
 	
 	}
 
-	//
+	// what is wrong here : test 1 with dataprovider runs twice but test 2 runs only once which is during second time only
 	
 	
 

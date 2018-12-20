@@ -22,7 +22,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 
-public class DummyTestBase1 {
+public class DummyTestBase1 {  // class starts
 	
 	public WebDriver driver;
 	public Properties prop ;// for config ptroperties
@@ -50,9 +50,9 @@ public class DummyTestBase1 {
 		extent.attachReporter(reporter);
 		
 
-		
-	
-		}
+		              }
+
+
 	
 	
 	public void openBrowser(String bType) throws IOException {
@@ -84,15 +84,18 @@ public class DummyTestBase1 {
 		
 		
 		
-		
-	}
+	                                                       }
+	
+	
 	
 	public void navigate(String urlKey) {
 		
 		driver.get(prop.getProperty(urlKey));
 		
 		
-	}
+	                                   }
+	
+	
 	
 	public void type(String xpath, String data) {
 		
@@ -101,12 +104,16 @@ public class DummyTestBase1 {
 		
 	}
 	
+	
+	
 	public void click(String xpath) {
 		
 		driver.findElement(By.xpath(prop.getProperty(xpath))).click();
 		
 		
 	}
+	
+	
 	
 	//Validations functions
 	
@@ -116,6 +123,8 @@ public class DummyTestBase1 {
 		
 		
 	}
+	
+	
 	
 	public boolean isElementPresent() {
 		
