@@ -106,11 +106,11 @@ public class DummyTestB extends DummyTestBase1 {
 		
 	public void DTestB2() throws IOException {
 	
-	System.out.println("inside DTestB2");
+	System.out.println("inside after method- DTestB2");
 	
 	try {
 	
-	ExtentTest logger = extent.createTest("DTestB2"); // create test2 
+	ExtentTest logger = extent.createTest("after emthod-DTestB2"); // create test2 
 	
 	logger.log(Status.INFO, "in test BTestB2");
 //test	

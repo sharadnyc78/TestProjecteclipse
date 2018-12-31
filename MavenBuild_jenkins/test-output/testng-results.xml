@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12580" started-at="2018-12-28T08:21:35Z" finished-at="2018-12-28T08:21:47Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12580" started-at="2018-12-28T08:21:35Z" finished-at="2018-12-28T08:21:47Z">
+      <class name="demo.openRsys">
+        <test-method status="PASS" signature="testhell()[pri:0, instance:demo.openRsys@396a51ab]" name="testhell" duration-ms="12563" started-at="2018-12-28T13:51:35Z" finished-at="2018-12-28T13:51:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testhell -->
+      </class> <!-- demo.openRsys -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
