@@ -22,8 +22,8 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 
-public class DummyTestBase1 {  // class starts
-	
+public class DummyTestBase1                                  { // class starts
+	 
 	public WebDriver driver;
 	public Properties prop ;// for config ptroperties
 	
@@ -41,7 +41,7 @@ public class DummyTestBase1 {  // class starts
 	
 @BeforeSuite
 
-   public void Setup() {
+   public void Setup()               {
 	   
 		reporter = new ExtentHtmlReporter("C:\\Users\\Sharad.Chauhan\\git\\repository3\\seleniumTest\\Reports\\DummyTest-Testbasefucntion.html"); // give the path for report geneartion
 		
@@ -50,7 +50,7 @@ public class DummyTestBase1 {  // class starts
 		extent.attachReporter(reporter);
 		
 
-		              }
+		                                }
 
 
 	
@@ -102,7 +102,7 @@ public class DummyTestBase1 {  // class starts
 		driver.findElement(By.xpath(prop.getProperty(xpath))).sendKeys(data);
 		
 		
-	}
+	                                           }
 	
 	
 	
@@ -111,7 +111,7 @@ public class DummyTestBase1 {  // class starts
 		driver.findElement(By.xpath(prop.getProperty(xpath))).click();
 		
 		
-	}
+	                                }
 	
 	
 	
@@ -137,7 +137,7 @@ public class DummyTestBase1 {  // class starts
 	
 	// reporting functions
 	
-	public void takeScreenshot(String screenshotname) throws IOException {
+	public void takeScreenshot(String screenshotname) throws IOException {//screenshot opens
 		
    TakesScreenshot ts1 = (TakesScreenshot)driver;
 		
@@ -148,7 +148,7 @@ public class DummyTestBase1 {  // class starts
 	
 		
 		
-	}
+	                                                                      } // screenshot closes
 
 		
 	
@@ -160,4 +160,4 @@ public class DummyTestBase1 {  // class starts
 	
 	
 
-}
+} // class close

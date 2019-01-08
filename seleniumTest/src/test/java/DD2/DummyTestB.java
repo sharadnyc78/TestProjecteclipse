@@ -22,18 +22,18 @@ import DD1.DummyTestBase1;
 import DD1.util;
 import junit.framework.Assert;
 
-public class DummyTestB extends DummyTestBase1 {
+public class DummyTestB extends DummyTestBase1 {  // class opens
 	
 	
 	
 	
 @Test(priority=1,dataProvider="ddd")
 	
-	public void DTestB1(String search_data) throws IOException {  //String search_data
+	public void DTestB1(String search_data) throws IOException {  //String search_data  // test open
 	
 	System.out.println("inside DTestB1");
 	
-	try {
+	try { // try open
 	
 	
 
@@ -90,21 +90,21 @@ public class DummyTestB extends DummyTestBase1 {
 		
 		extent.flush();  // flush report 1
 		
-	}catch(Exception e) {
+	}catch(Exception e) { // catch open  // try close
 		
 		logger.log(Status.FAIL, "Error is observed "+ e);
 		
 		
-	}
+	                       } // catch close
 		
 		
 		
-}
+                                                           } // test close
 		
 		
 @AfterMethod  // lesson : i wanted one test to be datdriven and another one to run always after it. make test 2 as aftermethod and it will run always .
 		
-	public void DTestB2() throws IOException {
+	public void DTestB2() throws IOException {  // test 2 open
 	
 	System.out.println("inside after method- DTestB2");
 	
@@ -131,13 +131,13 @@ public class DummyTestB extends DummyTestBase1 {
 		
 		
 	    }
-}
+                                               }// test 2 close
 
 
 	
 @DataProvider(name="ddd")
 	
-	public Object[][] passdata() throws IOException{
+	public Object[][] passdata() throws IOException{ // dp open
 		
 			
 		Object[][] ar =new Object[2][1];  // rows = 0,1 , column 0
@@ -153,10 +153,10 @@ public class DummyTestB extends DummyTestBase1 {
 		return ar;
 		
 		
-	}
+	                                            }// dp close
 
 	
-	}
+	                                                                                   }// class close
 
 	// what is wrong here : test 1 with dataprovider runs twice but test 2 runs only once which is during second time only
 	

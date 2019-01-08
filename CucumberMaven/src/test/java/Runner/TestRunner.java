@@ -7,10 +7,11 @@ import cucumber.api.junit.Cucumber;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="C:\\Users\\Sharad.Chauhan\\eclipse-workspace\\CucumberMaven\\features\\youtubesearch.feature",
+@CucumberOptions(features="C:\\Users\\Sharad.Chauhan\\git\\repository3\\CucumberMaven\\features\\amazon.feature",
              glue= {"stepDefination"},
              plugin={ "pretty", "html:target/cucumber-reports"},
-             dryRun=false)
+             dryRun=false,
+             monochrome=true)
 
 public class TestRunner {
 	
