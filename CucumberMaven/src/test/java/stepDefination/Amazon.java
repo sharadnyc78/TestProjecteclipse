@@ -14,6 +14,7 @@ import org.openqa.selenium.io.FileHandler;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
@@ -125,6 +126,9 @@ public class Amazon extends TestBase {
 		// take screenshot 
 		
 		takeScreenshot("echo");
+		
+		 logger.info("test -- echo ", MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Sharad.Chauhan\\git\\repository3\\CucumberMaven\\screenshots\\"+"echo.png").build());
+		
 		
 		extent.flush();  // flush report 1
 		
