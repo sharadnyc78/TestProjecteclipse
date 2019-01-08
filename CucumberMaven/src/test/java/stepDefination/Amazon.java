@@ -12,6 +12,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.io.FileHandler;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -19,7 +24,9 @@ import junit.framework.Assert;
 
 public class Amazon extends TestBase {
 	
-	
+	public static ExtentReports extent;
+    public static ExtentTest logger;
+	public static ExtentHtmlReporter reporter;
 	
 	//WebDriver driver;
 	
@@ -29,6 +36,18 @@ public class Amazon extends TestBase {
 	public void chrome_browser_is_opened() throws Throwable {
 		
 		openBrowser("Chrome");
+		
+        reporter = new ExtentHtmlReporter( "C:\\Users\\Sharad.Chauhan\\git\\repository3\\CucumberMaven\\Reports\\AmaonTest.html");
+        
+      
+		
+		extent = new ExtentReports();
+		
+		extent.attachReporter(reporter);
+		
+		logger =extent.createTest("sceanrio1");
+		
+		logger.log(Status.INFO, "open browser " + "chrome");
 	}
 	
 		
@@ -106,6 +125,8 @@ public class Amazon extends TestBase {
 		// take screenshot 
 		
 		takeScreenshot("echo");
+		
+		extent.flush();  // flush report 1
 		
 		// get extent reports
 	    

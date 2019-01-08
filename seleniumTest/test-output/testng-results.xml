@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="57504" started-at="2018-12-28T08:26:34Z" finished-at="2018-12-28T08:27:32Z">
+  <suite name="Default suite" duration-ms="50298" started-at="2019-01-04T06:37:08Z" finished-at="2019-01-04T06:37:58Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="57504" started-at="2018-12-28T08:26:34Z" finished-at="2018-12-28T08:27:32Z">
-      <class name="DD2.DummyTestC">
-        <test-method status="PASS" signature="DTestC1()[pri:0, instance:DD2.DummyTestC@2d928643]" name="DTestC1" duration-ms="12946" started-at="2018-12-28T13:57:19Z" finished-at="2018-12-28T13:57:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DTestC1 -->
-      </class> <!-- DD2.DummyTestC -->
+    <test name="Default test" duration-ms="50298" started-at="2019-01-04T06:37:08Z" finished-at="2019-01-04T06:37:58Z">
       <class name="DD2.DummyTestB">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:DD2.DummyTestB@6adede5]" name="Setup" is-config="true" duration-ms="188" started-at="2018-12-28T13:56:34Z" finished-at="2018-12-28T13:56:34Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:DD2.DummyTestB@5649fd9b]" name="Setup" is-config="true" duration-ms="168" started-at="2019-01-04T12:07:08Z" finished-at="2019-01-04T12:07:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="DTestB1(java.lang.String)[pri:1, instance:DD2.DummyTestB@6adede5]" name="DTestB1" duration-ms="20828" started-at="2018-12-28T13:56:35Z" data-provider="ddd" finished-at="2018-12-28T13:56:55Z">
+        <test-method status="PASS" signature="DTestB1(java.lang.String)[pri:1, instance:DD2.DummyTestB@5649fd9b]" name="DTestB1" duration-ms="30454" started-at="2019-01-04T12:07:08Z" data-provider="ddd" finished-at="2019-01-04T12:07:38Z">
           <params>
             <param index="0">
               <value>
@@ -28,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DTestB1 -->
-        <test-method status="PASS" signature="DTestB2()[pri:0, instance:DD2.DummyTestB@6adede5]" name="DTestB2" is-config="true" duration-ms="1761" started-at="2018-12-28T13:56:55Z" finished-at="2018-12-28T13:56:57Z">
+        <test-method status="PASS" signature="DTestB2()[pri:0, instance:DD2.DummyTestB@5649fd9b]" name="DTestB2" is-config="true" duration-ms="1863" started-at="2019-01-04T12:07:38Z" finished-at="2019-01-04T12:07:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DTestB2 -->
-        <test-method status="PASS" signature="DTestB1(java.lang.String)[pri:1, instance:DD2.DummyTestB@6adede5]" name="DTestB1" duration-ms="20179" started-at="2018-12-28T13:56:57Z" data-provider="ddd" finished-at="2018-12-28T13:57:17Z">
+        <test-method status="PASS" signature="DTestB1(java.lang.String)[pri:1, instance:DD2.DummyTestB@5649fd9b]" name="DTestB1" duration-ms="17884" started-at="2019-01-04T12:07:40Z" data-provider="ddd" finished-at="2019-01-04T12:07:58Z">
           <params>
             <param index="0">
               <value>
@@ -43,11 +37,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DTestB1 -->
-        <test-method status="PASS" signature="DTestB2()[pri:0, instance:DD2.DummyTestB@6adede5]" name="DTestB2" is-config="true" duration-ms="1772" started-at="2018-12-28T13:57:17Z" finished-at="2018-12-28T13:57:19Z">
+        <test-method status="PASS" signature="DTestB2()[pri:0, instance:DD2.DummyTestB@5649fd9b]" name="DTestB2" is-config="true" duration-ms="83" started-at="2019-01-04T12:07:58Z" finished-at="2019-01-04T12:07:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DTestB2 -->
       </class> <!-- DD2.DummyTestB -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -13,10 +13,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.BeforeSuite;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public class TestBase {
 	
 	WebDriver driver;
+	
+	
 
 	
 	
@@ -60,9 +67,18 @@ public class TestBase {
 		
 		//waits = new WebDriverWait(driver, 20); // waits implmented -- checks visibility 
 		
-		
+	}
+	
+
+	
+	
+	
+	
+
+
+
 		
 	             
 	
-}
+
 }
