@@ -7,13 +7,13 @@ import cucumber.api.junit.Cucumber;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="C:\\Users\\Sharad.Chauhan\\git\\repository3\\CucumberMaven\\features\\amazon.feature",
+@CucumberOptions(features="features", // all features should run
              glue= {"stepDefination"},
              plugin={ "pretty", "html:target/cucumber-reports"},
              dryRun=false,
              monochrome=true)
 
-public class TestRunner {
+public class TestRunnerAll {
 	
 
 

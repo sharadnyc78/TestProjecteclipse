@@ -23,7 +23,9 @@ public class TestBase {
 	
 	WebDriver driver;
 	
-	
+	public static ExtentReports extent;
+    public static ExtentTest logger;
+	public static ExtentHtmlReporter reporter;
 
 	
 	
@@ -70,7 +72,16 @@ public class TestBase {
 	}
 	
 
-	
+	public void reportExt() {
+		
+          reporter = new ExtentHtmlReporter( "C:\\Users\\Sharad.Chauhan\\git\\repository3\\CucumberMaven\\Reports\\AmaonTest.html");
+        
+      
+		
+		extent = new ExtentReports();
+		
+		extent.attachReporter(reporter);
+	}
 	
 	
 	

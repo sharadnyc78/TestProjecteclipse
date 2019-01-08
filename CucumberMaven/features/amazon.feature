@@ -11,3 +11,7 @@ Feature: Amazon site test
     |search|
     | echo|
     
+Scenario: open site amazon
+Given chrome open
+When amazon open
+Then close browser

@@ -25,9 +25,9 @@ import junit.framework.Assert;
 
 public class Amazon extends TestBase {
 	
-	public static ExtentReports extent;
-    public static ExtentTest logger;
-	public static ExtentHtmlReporter reporter;
+	//public static ExtentReports extent;
+    //public static ExtentTest logger;
+	//public static ExtentHtmlReporter reporter;
 	
 	//WebDriver driver;
 	
@@ -38,13 +38,15 @@ public class Amazon extends TestBase {
 		
 		openBrowser("Chrome");
 		
-        reporter = new ExtentHtmlReporter( "C:\\Users\\Sharad.Chauhan\\git\\repository3\\CucumberMaven\\Reports\\AmaonTest.html");
+        //reporter = new ExtentHtmlReporter( "C:\\Users\\Sharad.Chauhan\\git\\repository3\\CucumberMaven\\Reports\\AmaonTest.html");
         
       
 		
-		extent = new ExtentReports();
+		//extent = new ExtentReports();
 		
-		extent.attachReporter(reporter);
+		//extent.attachReporter(reporter);
+		
+		reportExt();
 		
 		logger =extent.createTest("sceanrio1");
 		
@@ -139,6 +141,28 @@ public class Amazon extends TestBase {
 	}
 	
 
+@Given("^chrome open$")
+public void chrome_open() throws Throwable {
+	openBrowser("Chrome");
+	
+	//driver.get("https://www.youtube.com/watch?v=KGBzW3vV0-A");
+	
+	logger =extent.createTest("sceanrio2");
+	
+	extent.flush();  // flush report 1
+}
+
+@When("^amazon open$")
+public void amazon_open() throws Throwable {
+	
+	
+   
+}
+
+@Then("^close browser$")
+public void close_browser() throws Throwable {
+   
+}
 
 	
 	
