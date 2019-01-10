@@ -55,7 +55,7 @@ public class DummyTestBase1                                  { // class starts
 
 	
 	
-	public void openBrowser(String bType) throws IOException {
+	public void openBrowser(String bType) throws IOException { // open
 		
 		prop = new Properties();
 		
@@ -84,7 +84,7 @@ public class DummyTestBase1                                  { // class starts
 		
 		
 		
-	                                                       }
+	                                                       } // close
 	
 	
 	

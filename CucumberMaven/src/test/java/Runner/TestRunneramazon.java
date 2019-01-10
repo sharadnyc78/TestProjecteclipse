@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features="C:\\Users\\Sharad.Chauhan\\git\\repository3\\CucumberMaven\\features\\amazon.feature",
              glue= {"stepDefination"},
              plugin={ "pretty", "html:target/cucumber-reports"},
-             dryRun=false,
+             dryRun=true,
              monochrome=true)
 
 public class TestRunneramazon {
